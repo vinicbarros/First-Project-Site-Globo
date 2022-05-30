@@ -16,7 +16,7 @@ body {
 /* ============ CONTENT ======================================*/
 
 #page{
-    width: 78.125rem;
+    width: 1250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,10 +57,6 @@ body {
     border-bottom: 0.063rem solid #f5f6f7;
     padding-top: 1.25rem;
     margin-bottom: 2.25rem;
-}
-
-.branches .mobl + .mobl {
-    padding-left: 80px;
 }
 
 .branches a {
@@ -114,6 +110,17 @@ body {
     color: #A81D83;
 }
 
+.branches .tech,
+.videos {
+    display: none;
+    overflow: hidden;
+}
+
+.bile {
+    display: none;
+    overflow: hidden;
+}
+
 /* ============ MAIN ======================================*/
 
 
@@ -158,8 +165,12 @@ body {
     font-size: 1.125rem;
     line-height: 1.406rem;
     color: #303134;
-    padding-bottom: 1.563rem;
+    padding-bottom: 7px;
     border-bottom: 0.063rem solid #EBEDEF;
+}
+
+#main .col-a .main-news .ajust {
+    padding-bottom: 1.563rem;
 }
 
 /* ============ TOP NOTICE ======================================*/
@@ -398,13 +409,6 @@ body {
 
 /* ============ MOBILE ASSETS =============================*/
 
-#top .branches .mobl {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
 
 @media screen and (max-width: 1100px) {
 
@@ -453,17 +457,55 @@ body {
         margin-bottom: 0;
     }
 
-    #top .branches .mobl {
-        width: 100vw;
+    #top .branches {
+        display: none;
+        overflow: hidden;
+    }
+
+    #top .bile {
         display: flex;
-
+        width: 80vw;
+        overflow: auto;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border-top: 0.063rem solid #F5F6F7;
+        border-bottom: 0.063rem solid #f5f6f7;
+        padding-top: 1.25rem;
+        margin-bottom: 2.25rem;
     }
 
-    .branches .mobl + .mobl {
-        padding-left: 0px;
+    #top .bile a {
+        text-decoration: none;
+        height: 2.5rem;
+        font-size: 1.188rem;
+        font-weight: bold;
+        display: flex;
     }
+
+    #top .bile .red {
+        color: #A80001;
+    }
+
+    #top .bile .cgreen {
+        color: #06AA48;
+    }
+
+    #top .bile .corange {
+        color: #FF7F00;
+    }
+
+    #top .bile .tech {
+        color: #666666;
+        
+    }
+
+    #top .bile .videos {
+        color: #0769DE;
+        display: flex;
+    }
+
 
 /*============= CORPO DA PÁGINA ======================================*/
 
